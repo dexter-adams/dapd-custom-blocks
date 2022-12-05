@@ -1,0 +1,36 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/blocks/nc-map/style.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-map--nc .wp-block-map__top .wp-block-map__container {
+  position: relative;
+  padding-bottom: 66.6666666667%;
+}
+.wp-block-map--nc .wp-block-map__top .wp-block-map__map {
+  position: absolute !important;
+  width: 100%;
+  height: 100%;
+}
+.wp-block-map--nc .wp-block-map__top .wp-block-map__map .jqvmap-zoomin,
+.wp-block-map--nc .wp-block-map__top .wp-block-map__map .jqvmap-zoomout {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  left: 10px;
+  border-radius: 10rem;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+  line-height: 1;
+  font-family: "Arial", "Helvetica Neue", sans-serif;
+}
+.wp-block-map--nc .wp-block-map__top .wp-block-map__map .jqvmap-zoomin {
+  top: 10px;
+}
+.wp-block-map--nc .wp-block-map__top .wp-block-map__map .jqvmap-zoomout {
+  top: 45px;
+}
+
+/*# sourceMappingURL=style-index.css.map*/
