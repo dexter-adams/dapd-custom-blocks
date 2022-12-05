@@ -1,20 +1,22 @@
 # DAPD Custom Blocks
 ## _Custom React blocks for WordPress Gutenberg editor._
 
-## Features
+## Blocks
 
-- JVectorMap for North Carolina with linkable regions
-- JVectorMap for United States with linkable regions
+- NC Map - JVectorMap for North Carolina with customizable colors and linkable regions
+- US Map - JVectorMap for United States with customizable colors and linkable regions
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+DAPD Custom Blocks is a WordPress plugin that utilizes the wordpress/create-block package and a number of open source projects in its build:
 
 - [ReactJS] - HTML enhanced for web apps!
 - [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [jQuery] - duh
+- [node.js] - Runtime environment used with NPM packages for build
+- [jQuery] - Dependency for JQVMap
 - [jqvmap](https://www.npmjs.com/package/jqvmap) - jQuery library for JVectorMap
+- [wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
+- [wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 
 And of course Dillinger itself is open source with a [public repository][dill]
 on GitHub.
