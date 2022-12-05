@@ -3100,7 +3100,7 @@ function _extends() {
 /***/ (function(module) {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"dapd/nc-map","version":"0.1.0","title":"NC Map","category":"widgets","icon":"smiley","description":"Example block scaffolded with Create Block tool.","supports":{"align":true},"textdomain":"nc-map","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":2,"name":"dapd/nc-map","version":"0.1.0","title":"NC Map","category":"widgets","icon":"admin-site-alt","description":"Example block scaffolded with Create Block tool.","supports":{"align":true},"textdomain":"nc-map","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

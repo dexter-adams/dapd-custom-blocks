@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "US Map",
 	"category": "widgets",
-	"icon": "smiley",
+	"icon": "admin-site",
 	"description": "Example block scaffolded with Create Block tool.",
 	"supports": {
 		"align": true
