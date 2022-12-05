@@ -10,10 +10,10 @@
 
 DAPD Custom Blocks is a WordPress plugin that utilizes the wordpress/create-block package and a number of open source projects in its build:
 
-- [ReactJS] - HTML enhanced for web apps!
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - Runtime environment used with NPM packages for build
-- [jQuery] - Dependency for JQVMap
+- [ReactJS](https://reactjs.org/) - HTML enhanced for web apps!
+- [Twitter Bootstrap](https://getbootstrap.com/) - great UI boilerplate for modern web apps
+- [node.js](https://nodejs.org/en/) - Runtime environment used with NPM packages for build
+- [jQuery](https://jquery.com/) - Dependency for JQVMap
 - [jqvmap](https://www.npmjs.com/package/jqvmap) - jQuery library for JVectorMap
 - [wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
 - [wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
