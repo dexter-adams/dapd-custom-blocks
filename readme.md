@@ -18,9 +18,6 @@ DAPD Custom Blocks is a WordPress plugin that utilizes the wordpress/create-bloc
 - [wordpress/create-block](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-create-block/)
 - [wordpress/scripts](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-scripts/)
 
-And of course Dillinger itself is open source with a [public repository][dill]
-on GitHub.
-
 ## License
 
 GPL-2.0-or-later
