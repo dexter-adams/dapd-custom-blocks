@@ -44,7 +44,7 @@ export default function save(props) {
 								role="button"
 								aria-expanded="false"
 								aria-controls={'collapse-' + blockIndex}>
-							{__('Open Counties List')}
+							Open Counties List
 						</button>
 					</div>
 				</div>

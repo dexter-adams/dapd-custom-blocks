@@ -3,6 +3,7 @@ import { select } from '@wordpress/data';
 import { Fragment, useEffect } from '@wordpress/element';
 import { Panel, PanelBody, PanelRow, CheckboxControl, TextControl, ColorPalette } from '@wordpress/components';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import $ from 'jquery';
 
 import './editor.scss';
 
@@ -50,7 +51,7 @@ export default function edit(props) {
 				<InspectorControls>
 					<Panel
 							header="State Settings"
-							className="dapd-nc-map-settings"
+							className="dapd-us-map-settings"
 					>
 						<PanelBody title="Background Color" icon="more" initialOpen={false}>
 							<PanelRow>
@@ -105,14 +106,15 @@ export default function edit(props) {
 											}
 										}}
 								/>
-								{Object.keys(stateAbbreviations).map((state, index) => {
-									// We have to check if the property exists to prevent url error.
-									if (typeof props.attributes['state' + state] !== 'undefined') {
-										const value = props.attributes['state' + state].url;
-										const stateClassName = state === 'DC' ? 'hidden state state--md' : 'hidden state state--' + state.toLowerCase();
-										return (
+							</PanelRow>
+							{Object.keys(stateAbbreviations).map((state, index) => {
+								// We have to check if the property exists to prevent url error.
+								if (typeof props.attributes['state' + state] !== 'undefined') {
+									const value = props.attributes['state' + state].url;
+									const stateClassName = state === 'DC' ? 'hidden state state--md' : 'hidden state state--' + state.toLowerCase();
+									return (
+											<Fragment key={index}>
 												<TextControl
-														key={index}
 														label={stateAbbreviations[state]}
 														className={stateClassName}
 														value={value}
@@ -121,10 +123,10 @@ export default function edit(props) {
 														}}
 														placeholder="Enter a desired url..."
 												/>
-										);
-									}
-								})}
-							</PanelRow>
+											</Fragment>
+									);
+								}
+							})}
 						</PanelBody>
 					</Panel>
 				</InspectorControls>

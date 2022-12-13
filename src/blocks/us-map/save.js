@@ -20,6 +20,7 @@ export default function save(props) {
 	);
 	const stateData = {};
 
+
 	Object.keys(stateAbbreviations).map((state) => {
 		if (typeof props.attributes['state' + state] !== 'undefined') {
 			if (props.attributes['state' + state].url !== '') {
@@ -44,7 +45,7 @@ export default function save(props) {
 								role="button"
 								aria-expanded="false"
 								aria-controls={'collapse-' + blockIndex}>
-							{__('Open States List')}
+							Open States List
 						</button>
 					</div>
 				</div>

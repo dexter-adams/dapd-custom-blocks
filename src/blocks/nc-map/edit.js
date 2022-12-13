@@ -3,6 +3,7 @@ import { select } from '@wordpress/data';
 import { Fragment, useEffect } from '@wordpress/element';
 import { Panel, PanelBody, PanelRow, CheckboxControl, TextControl, ColorPalette } from '@wordpress/components';
 import { InspectorControls, useBlockProps } from '@wordpress/block-editor';
+import $ from 'jquery';
 
 import './editor.scss';
 
@@ -100,16 +101,19 @@ export default function edit(props) {
 										onChange={(value) => {
 											if (value) {
 												$('.dapd-nc-map-settings .county').removeClass('hidden').addClass('visible');
+											} else {
+												$('.dapd-nc-map-settings .county').removeClass('visible').addClass('hidden');
 											}
 										}}
 								/>
-								{Object.keys(ncCountyCodes).map((county, index) => {
-									// We have to check if the property exists to prevent url error.
-									if (typeof props.attributes['county' + county] !== 'undefined') {
-										const value = props.attributes['county' + county].url;
-										return (
+							</PanelRow>
+							{Object.keys(ncCountyCodes).map((county, index) => {
+								// We have to check if the property exists to prevent url error.
+								if (typeof props.attributes['county' + county] !== 'undefined') {
+									const value = props.attributes['county' + county].url;
+									return (
+											<Fragment key={index}>
 												<TextControl
-														key={index}
 														label={ncCountyCodes[county]}
 														className={'hidden county county--' + county}
 														value={value}
@@ -118,10 +122,10 @@ export default function edit(props) {
 														}}
 														placeholder="Enter a desired url..."
 												/>
-										);
-									}
-								})}
-							</PanelRow>
+											</Fragment>
+									);
+								}
+							})}
 						</PanelBody>
 					</Panel>
 				</InspectorControls>
