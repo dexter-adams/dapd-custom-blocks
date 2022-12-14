@@ -58,7 +58,7 @@ export default function edit(props) {
 								<ColorPalette
 										colors={colors}
 										value={props.backgroundColor}
-										onChange={(value) => setAttributes({ backgroundColor: value })}
+										onChange={(value) => setAttributes({ backgroundColor: value ?? 'transparent'  })}
 										disableCustomColors={true}
 								/>
 							</PanelRow>
@@ -68,7 +68,7 @@ export default function edit(props) {
 								<ColorPalette
 										colors={colors}
 										value={props.primaryColor}
-										onChange={(value) => setAttributes({ primaryColor: value })}
+										onChange={(value) => setAttributes({ primaryColor: value ?? 'transparent' })}
 										disableCustomColors={true}
 								/>
 							</PanelRow>
@@ -78,7 +78,7 @@ export default function edit(props) {
 								<ColorPalette
 										colors={colors}
 										value={props.hoverColor}
-										onChange={(value) => setAttributes({ hoverColor: value })}
+										onChange={(value) => setAttributes({ hoverColor: value ?? 'transparent'  })}
 										disableCustomColors={true}
 								/>
 							</PanelRow>
@@ -88,7 +88,7 @@ export default function edit(props) {
 								<ColorPalette
 										colors={colors}
 										value={props.selectedColor}
-										onChange={(value) => setAttributes({ selectedColor: value })}
+										onChange={(value) => setAttributes({ selectedColor: value ?? 'transparent'  })}
 										disableCustomColors={true}
 								/>
 							</PanelRow>
