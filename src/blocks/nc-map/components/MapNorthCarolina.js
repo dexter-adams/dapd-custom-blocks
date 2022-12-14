@@ -20,23 +20,24 @@ export default class MapNorthCarolina extends Component {
 	componentDidUpdate(prevProps, prevState, snapshot) {
 		// Change map background color
 		if (prevProps.attributes.backgroundColor !== this.props.attributes.backgroundColor) {
-			$(this.el).css({ 'background-color': hexToRgba(this.props.attributes.backgroundColor) });
+			$(this.el).css({ 'background-color': this.props.attributes.backgroundColor ? hexToRgba(this.props.attributes.backgroundColor) : 'transparent' });
 			this.map.backgroundColor = this.props.attributes.backgroundColor;
 		}
 
 		// Change the map primary color
 		if (prevProps.attributes.primaryColor !== this.props.attributes.primaryColor) {
-			$(this.el).find('path').attr('fill', this.props.attributes.primaryColor);
-			this.map.color = this.props.attributes.primaryColor;
+			const primaryColor = this.props.attributes.primaryColor ?? 'transparent';
+			$(this.el).find('path').attr('fill', primaryColor);
+			this.map.color = primaryColor;
 		}
 
 		// Set JQVMap object color values
 		if (prevProps.attributes.hoverColor !== this.props.attributes.hoverColor) {
-			this.map.hoverColor = this.props.attributes.hoverColor;
+			this.map.hoverColor = this.props.attributes.hoverColor ?? 'transparent';
 		}
 
 		if (prevProps.attributes.selectedColor !== this.props.attributes.selectedColor) {
-			this.map.selectedColor = this.props.attributes.selectedColor;
+			this.map.selectedColor = this.props.attributes.selectedColor ?? 'transparent';
 		}
 	}
 
