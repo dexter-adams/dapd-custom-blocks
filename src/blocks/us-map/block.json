@@ -6,7 +6,6 @@
 	"title": "US Map",
 	"category": "widgets",
 	"icon": "admin-site",
-	"description": "Example block scaffolded with Create Block tool.",
 	"supports": {
 		"align": true
 	},

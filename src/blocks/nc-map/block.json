@@ -6,7 +6,6 @@
 	"title": "NC Map",
 	"category": "widgets",
 	"icon": "admin-site-alt",
-	"description": "Example block scaffolded with Create Block tool.",
 	"supports": {
 		"align": true
 	},
