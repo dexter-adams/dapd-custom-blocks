@@ -38,10 +38,8 @@ function dapd_custom_blocks_assets() {
 add_action( 'enqueue_block_assets', 'dapd_custom_blocks_assets' );
 
 function dapd_custom_blocks_editor_assets() {
-	if ( has_block( 'dapd/nc-map' ) || has_block( 'dapd/us-map' ) ) {
-		wp_enqueue_style( 'dapd-cb-style', plugin_dir_url( __FILE__ ) . 'includes/dist/editor.css', [], null );
-		wp_enqueue_script( 'dapd-cb-script', plugin_dir_url( __FILE__ ) . 'includes/dist/editor.js', [ 'jquery' ], null, true );
-	}
+	wp_enqueue_style( 'dapd-cb-style', plugin_dir_url( __FILE__ ) . 'includes/dist/editor.css', [], null );
+	wp_enqueue_script( 'dapd-cb-script', plugin_dir_url( __FILE__ ) . 'includes/dist/editor.js', [ 'jquery' ], null, true );
 }
 
 add_action( 'enqueue_block_editor_assets', 'dapd_custom_blocks_editor_assets' );

@@ -58,7 +58,6 @@ export default class MapNorthCarolina extends Component {
 				$('.dapd-nc-map-settings .county').removeClass('visible').addClass('hidden');
 				$('.dapd-nc-map-settings .county--' + code).removeClass('hidden').addClass('visible');
 				$('.dapd-nc-map-toggle-all input[type="checkbox"]').prop('checked', false);
-				console.log('Test');
 			},
 		});
 

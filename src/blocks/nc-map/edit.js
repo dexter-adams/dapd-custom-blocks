@@ -135,13 +135,14 @@ export default function edit(props) {
 						<MapNorthCarolina attributes={{ ...attributes }} data-index={blockIndex}/>
 						<div className="wp-block-map__list-toggle">
 							<button
+									className="btn btn-primary"
 									type="button"
 									data-bs-toggle="collapse"
 									data-bs-target={'#collapse-' + blockIndex}
-									role="button"
 									aria-expanded="false"
-									aria-controls={'collapse-' + blockIndex}>
-								{__('Open Counties List')}
+									aria-controls={'collapse-' + blockIndex}
+							>
+								{__('Toggle Counties List')}
 							</button>
 						</div>
 					</div>

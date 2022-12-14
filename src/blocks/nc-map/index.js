@@ -37,11 +37,11 @@ registerBlockType(metadata.name, {
 		},
 		backgroundColor: {
 			type: 'string',
-			default: '#ffffff',
+			default: '#FFF',
 		},
 		primaryColor: {
 			type: 'string',
-			default: '#0f2044',
+			default: '#0F2044',
 		},
 		hoverColor: {
 			type: 'string',
@@ -49,7 +49,7 @@ registerBlockType(metadata.name, {
 		},
 		selectedColor: {
 			type: 'string',
-			default: '#a6b0b7',
+			default: '#A6B0B7',
 		},
 		'county37001': {
 			type: 'object',
